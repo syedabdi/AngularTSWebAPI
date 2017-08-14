@@ -1,0 +1,19 @@
+<package>
+    <metadata>
+        <id>FE_Compiled</id>
+        <version>$buildNumber$</version>
+        <authors>Syed Abdi</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes></releaseNotes>
+        <copyright>Copyright 2017</copyright>
+        <dependencies>
+            <dependency id="Angrular.UI.UI-Router" version="[0.2.15,)"   />
+            <dependency id="AngularJS.Core" version="[1.4.7,)"   />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="app\_XTier.VHR\**\*.html" target="content\app\_XTier.VHR"/>
+        <file src="app\_XTier.VHR\app.js" target="content\app\_XTier.VHR\app.js" />
+        <file src="app\_XTier.VHR\styles\app.css" target="content\app\_XTier.VHR\styles\app.css" />
+    </files>
+</package>

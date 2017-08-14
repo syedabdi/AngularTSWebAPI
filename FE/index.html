@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html ng-app="XTier.VHR">
+<head>
+    <title></title>
+
+    <link href="App/_XTier.VHR/styles/app.css" rel="stylesheet" />
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-ui-router.js"></script>
+    <script src="Scripts/statehelper.js"></script>
+
+    <script src="App/_XTier.VHR/app.js"></script>
+
+    <script>
+        XTier.VHR.ngModule.config(function ($httpProvider) {
+            $httpProvider.interceptors.push(function () {
+                return {
+                    request: function (config) {
+                        config.url = config.url.replace(/api\//, 'http://localhost:63219/api/');
+                        return config;
+                    }
+                }
+            })
+        }).run(function ($http) {
+            //$http.get('api/helloworld')
+            //    .success(function () {
+            //        console.log("Successfully connected to app back-end.");
+            //    }).catch(function () {
+            //        console.log("Error connecting to the app back-end.")
+            //    })
+        })
+    </script>
+
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div ui-view></div>
+</body>
+</html>

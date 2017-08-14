@@ -1,0 +1,35 @@
+﻿@import (reference) '../../variables.less';
+
+#LabeledContainer {
+    .LabeledContainer(@me) {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: baseline;
+
+        .@{me}-label {
+            color: @greyAccentLabelContent;
+            font-size: @fontSizeLabelContent;
+            padding-right: 7px;
+        }
+        .@{me}-result {
+            flex: 1;
+        }
+
+        &.top {
+            flex-wrap: wrap;
+            .@{me}-label { flex-basis: 100%; padding-bottom: 3px; }
+            .@{me}-result { flex-basis: 100%; }
+        }
+
+        &.right {
+            .@{me}-label { order: 2; padding-left: 7px; padding-right: 0; }
+            .@{me}-result { order: 1; }
+        }
+
+        &.center {
+            align-items: center;
+        }
+    }
+}

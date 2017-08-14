@@ -1,0 +1,17 @@
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\bin\Debug\SMC.XTier.VHR.DTO.dll
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\bin\Debug\SMC.XTier.VHR.DTO.pdb
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\bin\Debug\TypeLite.dll
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\bin\Debug\TypeLite.Net4.dll
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\bin\Debug\TypeLite.pdb
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\bin\Debug\TypeLite.Net4.pdb
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\obj\Debug\SMC.XTier.VHR.DTO.dll
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\obj\Debug\SMC.XTier.VHR.DTO.pdb
+C:\Projects\SynerMed\SMC\XTier\VHR\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Projects\VHR\DTO\bin\Debug\SMC.XTier.VHR.DTO.dll
+C:\Projects\VHR\DTO\bin\Debug\SMC.XTier.VHR.DTO.pdb
+C:\Projects\VHR\DTO\bin\Debug\TypeLite.dll
+C:\Projects\VHR\DTO\bin\Debug\TypeLite.Net4.dll
+C:\Projects\VHR\DTO\bin\Debug\TypeLite.pdb
+C:\Projects\VHR\DTO\bin\Debug\TypeLite.Net4.pdb
+C:\Projects\VHR\DTO\obj\Debug\SMC.XTier.VHR.DTO.dll
+C:\Projects\VHR\DTO\obj\Debug\SMC.XTier.VHR.DTO.pdb

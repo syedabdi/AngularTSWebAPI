@@ -1,0 +1,39 @@
+﻿@import (reference) '../../variables.less';
+
+#XThemeHorizontalKvps {
+    .HorizontalKvps(@me) {
+        @valueSize: 14px;
+        @valueColor: #444;
+        @spacing: 15px;
+
+        display: flex;
+
+        .@{me}-kvp {
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+
+            .@{me}-kvp-key {
+                font-size: @fontSizeLabelContent;
+                color: @greyAccentLabelContent;
+                margin-bottom: @spacing/2;
+            }
+            .@{me}-kvp-value {
+                color: @valueColor;
+                font-size: @valueSize;
+            }
+
+            &.@{me}-kvp--autoWidth {
+                flex: none;
+            }
+        }
+        .@{me}-kvp:not(:first-of-type) {
+            margin-left: @spacing;
+        }
+    }
+}
+
+.xThemeHorizontalKvps {
+    #XThemeHorizontalKvps > .HorizontalKvps(xThemeHorizontalKvps);
+}

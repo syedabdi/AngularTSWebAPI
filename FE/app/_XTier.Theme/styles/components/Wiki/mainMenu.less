@@ -1,0 +1,45 @@
+﻿@import (reference) '../../variables.less';
+
+#MainMenu {
+    .MainMenu(@me){
+        position: relative;
+        display: block;
+
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+
+        background-color: @darkGreyAccentBright;
+
+        .menuContainer {
+            position: relative;
+            list-style-type: none;
+
+            margin: 0;
+            padding: 0;
+
+            .menuElement {
+                position: relative;
+                box-sizing: border-box;
+
+                margin: 0;
+                padding: 10px;
+
+                color: #ffffff;
+
+                &category {
+                    font-size: 1.1em;
+                }
+
+                a {
+                    color: #ffffff;
+                    display: block;
+                }
+
+                &:hover {
+                    background-color: @darkGreyAccentDark;
+                }
+            }
+        }
+    }
+}

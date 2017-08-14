@@ -1,0 +1,72 @@
+﻿@import (reference) "Table.less";
+
+
+#VHRDetails {
+    ._InfoSection(@me) {
+        .@{me}-resultsTable {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+    }
+
+
+    //Primary Care Provider Enrollment History
+    ._vhrSection(@me) {
+        .@{me}-memberSubmittedTable {
+            //adding default table 
+            #RealTable > .RealTable(~"@{me}-memberSubmittedTable");
+        }
+    }
+
+    //Now we add the rest of the styles into the Member Detail
+    .VHRDetails(@me) {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+
+        .@{me}-layout--whole {
+            position: relative;
+            flex-basis: 100%;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .@{me}-layout--leftColumn {
+            position: relative;
+            flex-basis: 50%;
+            //internet explorer flex fix
+            max-width: 50%;
+
+            margin: 0;
+            padding: 0;
+            padding-right: 10px;
+        }
+        .@{me}-layout--rightColumn {
+            position: relative;
+            flex-basis: 40%;
+            //internet explorer flex fix
+            max-width: 40%;
+
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+        }
+
+        .@{me}-vhrSection {
+            #VHRDetails > ._vhrSection(~"@{me}-vhrSection");
+            margin-bottom: 20px;
+        }
+    }
+        
+}
+
+.xVHRDetails {
+    #VHRDetails > .VHRDetails(xVHRDetails);
+}

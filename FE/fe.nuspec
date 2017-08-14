@@ -1,0 +1,24 @@
+<package>
+    <metadata>
+        <id>SMC.XTier.VHR.FE</id>
+        <version>$buildNumber$</version>
+        <authors>Syed Abdi</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes></releaseNotes>
+        <copyright>Copyright 2017</copyright>
+        <tags>frontend XTier VHR less typescript</tags>
+        <dependencies>
+            <dependency id="Angular.UI.UI-Router" version="[0.2.15,)"   />
+            <dependency id="AngularJS.Core" version="[1.4.7,)"   />
+            <dependency id="Angularjs.TypeScript.DefinitelyTyped" version="[3.9.0,)"   />
+            <dependency id="Angular-ui-router.TypeScript.DefinitelyTyped" version="[1.4.5,)"   />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="app\_XTier.VHR\**\*.html" target="content\app\_XTier.VHR"/>
+        <file src="app\_XTier.VHR\**\*.ts" target="content\app\_XTier.VHR" exclude='**\*.d.ts'/>
+        <file src="app\_XTier.VHR\**\*.less" target="content\app\_XTier.VHR"/>
+        <file src="Scripts\typelite.net4.d.ts" target="content\app\_XTier.VHR\typings.d.ts" />
+        <file src="Scripts\enums.ts" target="content\app\_XTier.VHR\typings.enums.ts" />
+    </files>
+</package>

@@ -1,0 +1,18 @@
+﻿<package>
+    <metadata>
+        <id>SMC.XTier.VHR.DTO</id>
+        <version>$buildNumber$</version>
+        <authors>Syed abdi</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes></releaseNotes>
+        <copyright>Copyright 2017</copyright>
+        <tags>backend xtier vhr webapi</tags>
+        <dependencies>
+          <dependency id="TypeLite.Lib" version="[1.8.1,)" />
+        </dependencies>
+    </metadata>
+    <files>
+      <file src="**\smc.xtier.vhr.dto.dll" target="lib\" />
+      <file src="**\smc.xtier.vhr.dto.pdb" target="lib\" />
+    </files>
+</package>

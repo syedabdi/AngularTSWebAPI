@@ -1,0 +1,30 @@
+﻿@import (reference) '../../variables.less';
+
+#MainButton {
+    .MainButton {
+        position: relative;
+        box-sizing: border-box;
+        width: auto;
+        height: 40px;
+        padding: 0 20px;
+
+        color: @blueAccent;
+        background-color: #ffffff;
+        border: 1px solid #B4C3D3;
+        border-bottom-width: 2px;
+        border-right-width: 2px;
+
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            background-color: @blueAccent;
+            color: #ffffff;
+            border-color: @blueAccent;
+        }
+
+        &.stretch {
+            width: 100%;
+        }
+    }
+}

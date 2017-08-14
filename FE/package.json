@@ -1,0 +1,31 @@
+{
+  "name": "XTier.fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precompile": "npm install",
+    "compile": "npm run compile_ts && npm run compile_js && npm run compile_less",
+    "compile_ts": "node node_modules/typescript/bin/tsc",
+    "compile_js": "npm run intellitemplate",
+    
+    "intellitemplate": "node node_modules/ng1-intellitemplate app/_XTier.VHR/_app.js --es5 > app\\_XTier.VHR\\app.js",
+
+    "compile_less": "node node_modules/less/bin/lessc app/_XTier.VHR/styles/app.less app/_XTier.VHR/styles/app.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "^1.6.0",
+    "less": "^2.7.1",
+    "lodash": "^4.15.0",
+    "ng1-intellitemplate": "^1.1.4",
+    "typescript": "^1.8.10",
+    "concurrently": "^3.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "fs-extra-promise": "^0.4.1",
+    "glob": "^7.1.0"
+  }
+}

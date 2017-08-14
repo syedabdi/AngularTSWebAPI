@@ -1,0 +1,9 @@
+﻿#InlineBlock {
+    .preventGap(@me; @fontSize: 12px){
+        font-size: 0;
+        
+        &.@{me} > * {
+            font-size: @fontSize;
+        }
+    }
+}

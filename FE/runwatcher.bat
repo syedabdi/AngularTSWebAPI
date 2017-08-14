@@ -1,0 +1,1 @@
+node node_modules\concurrently --prefix "[{name}]" -k --names "typescript,watcher.js" "node node_modules\typescript\bin\tsc -w" "node watcher.js" 

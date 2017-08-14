@@ -1,0 +1,68 @@
+﻿@import (reference) '../variables.less';
+//simpleElements import
+@import (reference) 'simpleElements/whiteBox.less';
+@import (reference) 'simpleElements/labeledContainer.less';
+//form elements import
+@import (reference) 'formElements/TextInput.less';
+@import (reference) 'formElements/MainButton.less';
+@import (reference) 'formElements/TextArea.less';
+
+
+.font-face(@name, @shortName, @weight, @style: normal) {
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: @style;
+        font-weight: @weight;
+        src: local('@{name}'), local('@{shortName}'), url('/app/_XTier.Theme/styles/fonts/OpenSans_@{style}@{weight}.woff') format('woff');
+    }
+}
+
+.font-face("Open Sans Light", "OpenSans-Light", 300);
+.font-face("Open Sans", "OpenSans", 400);
+.font-face("Open Sans Semibold", "OpenSans-Semibold", 600);
+.font-face("Open Sans Bold", "OpenSans-Bold", 700);
+.font-face("Open Sans Extrabold", "OpenSans-Extrabold", 800);
+.font-face("Open Sans Light Italic", "OpenSansLight-Italic", 300, italic);
+.font-face("Open Sans Italic", "OpenSans-Italic", 400, italic);
+.font-face("Open Sans Semibold Italic", "OpenSans-SemiboldItalic", 600, italic);
+.font-face("Open Sans Bold Italic", "OpenSans-BoldItalic", 700, italic);
+.font-face("Open Sans Extrabold Italic", "OpenSans-ExtraboldItalic", 800, italic);
+
+#SynermedTheme {
+    .SynermedTheme(@me) {
+        position: relative;
+        box-sizing: border-box;
+
+        margin: 0;
+        padding: 0;
+
+        font-family: @fontFamily;
+        font-size: @fontSize;
+        color: @fontColor;
+
+        //adding the whiteBox classes
+        .whiteBoxContainer {
+            #SynermedWhiteBox > .SynermedWhiteBox(whiteBoxContainer); 
+        }
+
+        .labeledContainer {
+            #LabeledContainer > .LabeledContainer(labeledContainer);
+        }
+
+        .synermedForm {
+            input[type=text] {
+                #TextInput > .TextInput;
+            }
+            textarea {
+                #TextArea > .TextArea;
+            }
+            input[type=submit], input[type=button], button {
+                #MainButton > .MainButton;
+            }
+        }
+    }
+}
+
+.synermedTheme {
+    #SynermedTheme > .SynermedTheme(synermedTheme);
+}

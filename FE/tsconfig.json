@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "es5",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "outFile": "app/_XTier.VHR/_app.js",
+    "removeComments":  false,
+    "declaration": false
+  },
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "scripts/typings/XTierular-ui",
+    "scripts/typings/lodash/lodash.d.ts",
+    "app/_XTier.VHR/_app.d.ts",
+    "bin",
+    "obj",
+    "content"
+  ]
+}

@@ -1,0 +1,7 @@
+﻿*.*
+!.tfignore
+!statehelper.js
+!typelite.net4.tt
+!enums.ts
+!typelite.net4.d.ts
+!manager.ttinclude

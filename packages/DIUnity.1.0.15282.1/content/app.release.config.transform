@@ -1,0 +1,11 @@
+﻿<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings>
+    <add key="WCFCredential" value="HPqcRTMc1HL2MJuQ3wkycu47wBsxl8+puDK1y8L48hk=" xdt:Transform="Insert"/>
+    <add key="dataaccessor" xdt:Transform="RemoveAll" xdt:Locator="Match(key)"/>
+    <add key="dataaccessor" value="wcfsqldataaccessor" xdt:Transform="Insert"/>
+    <add key="ServerLocation" xdt:Transform="RemoveAll" xdt:Locator="Match(key)"/>
+    <add key="ServerLocation" value="prod" xdt:Transform="Insert"/>
+    <add key="COMMON" xdt:Transform="RemoveAll" xdt:Locator="Match(key)"/>
+    <add key="COMMON" value="4ojd3BXByEzdBQDKPbCGhxkk1B6fNGxH8UgP2bQs4ssWet5SuEAnb0ycXKRK4NrClQDs54NAXzZaH5VSnA62852NpcwI+kmq" xdt:Transform="Insert"/>
+  </appSettings>
+</configuration>

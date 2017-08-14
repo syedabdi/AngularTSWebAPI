@@ -1,0 +1,56 @@
+﻿#RealTable {
+    .RealTable(@me){
+       display: block;
+       width: 100%;
+       text-align: left;
+       table-layout: fixed;
+       border-collapse: collapse;
+        max-height: 300px;
+        overflow: auto;
+        border-bottom: 1px solid #cfd9db;
+        margin-bottom: 0;
+
+        .@{me}-row{
+          &.@{me}-row--heading{
+              .@{me}-row-cell {
+                  color: #607D8B;
+                  font-weight: 600;
+
+                  background-color: #F8F9FA;
+                  border-top: 1px solid #cfd9db;
+                  border-bottom: 1px solid #cfd9db;
+              }
+          }
+
+          .@{me}-row-cell {
+              padding: 15px 1px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+
+              border-bottom: 1px solid #cfd9db;
+              font-size: 13px;
+
+              &:first-child {
+                  padding-left: 20px;
+              }
+
+              &:last-child {
+                  padding-right: 20px;
+              }
+          }
+
+          &:last-child {
+               .@{me}-row-cell {
+                   border-bottom: none;
+               }
+
+                &.@{me}-row--heading{
+                    .@{me}-row-cell {
+                        border-bottom: 1px solid #cfd9db;
+                    }
+                }
+          }
+        }
+    }
+}

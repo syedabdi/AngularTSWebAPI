@@ -1,0 +1,42 @@
+﻿@import (reference) '../../variables.less';
+
+#SynermedWhiteBox {
+    .SynermedWhiteBox(@me) {
+        position: relative;
+        margin: 0;
+        padding: @whiteBoxPadding;
+
+        background-color: @whiteBoxBackground;
+
+        &.noPadding {
+            padding: 0;
+
+            .@{me}-header {
+                position: relative;
+                padding: @whiteBoxPadding;
+            }
+        }
+
+        .@{me}-header {
+            position: relative;
+            padding-bottom: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+
+            .@{me}-header--label {
+                position: relative;
+                font-size: @whiteFontHeaderLabelSize;
+                color: @whiteFontHeaderLabelColor;
+                flex: 1;
+            }
+
+            .@{me}-header--extras {
+                position: relative;
+                font-size: @whiteFontHeaderLabelSize;
+                color: @whiteFontHeaderLabelColor;
+            }
+        }
+    }
+}

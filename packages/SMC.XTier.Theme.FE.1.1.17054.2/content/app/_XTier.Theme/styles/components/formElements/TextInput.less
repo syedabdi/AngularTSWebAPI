@@ -1,0 +1,29 @@
+﻿@import (reference) '../../variables.less';
+
+#TextInput {
+    .TextInput {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+
+        width: 100%;
+        height: 40px;
+
+        padding: 0 15px;
+        margin: 0;
+
+        border: solid 1px @greyAccentBright;
+        background-color: #fbfcfc;
+
+        line-height: 20px;
+        color: @fontColor;
+        font-style: italic;
+        font-size: 14px;
+
+        &:focus {
+            border-color: @blueAccent;
+            outline-width: 0;
+        }
+
+    }
+}

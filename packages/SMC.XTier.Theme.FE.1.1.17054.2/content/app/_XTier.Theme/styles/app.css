@@ -1,0 +1,325 @@
+.themeWiki {
+  position: static;
+  width: 970px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #222222;
+}
+.themeWiki .themeWiki-wallpaper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 970px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+.themeWiki .themeWiki-header {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 15px;
+  background-color: #008fdd;
+}
+.themeWiki .themeWiki-header .themeWiki-title {
+  color: #ffffff;
+  font-size: 16px;
+}
+.themeWiki .themeWiki-body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.themeWiki .themeWiki-body .themeWiki-menu {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #3a5068;
+}
+.themeWiki .themeWiki-body .themeWiki-menu .menuContainer {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.themeWiki .themeWiki-body .themeWiki-menu .menuContainer .menuElement {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  color: #ffffff;
+}
+.themeWiki .themeWiki-body .themeWiki-menu .menuContainer .menuElementcategory {
+  font-size: 1.1em;
+}
+.themeWiki .themeWiki-body .themeWiki-menu .menuContainer .menuElement a {
+  color: #ffffff;
+  display: block;
+}
+.themeWiki .themeWiki-body .themeWiki-menu .menuContainer .menuElement:hover {
+  background-color: #2c3d4f;
+}
+.themeWiki .themeWiki-body .themeWiki-content {
+  position: relative;
+  flex: 1;
+  margin: 0;
+  padding: 20px;
+}
+.themeWiki .themeWiki-elementContainer {
+  position: relative;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: #2c3d4f;
+}
+.themeWiki .themeWiki-table {
+  position: relative;
+  display: table;
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+.themeWiki .themeWiki-table th {
+  background-color: #f5f7f8;
+  padding: 5px;
+  text-align: left;
+}
+.themeWiki .themeWiki-table td {
+  padding: 5px;
+  border-bottom: solid 1px #d6dfe8;
+}
+.themeWiki .themeWiki-table tr:last-child td {
+  border-bottom: none;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('/app/_XTier.Theme/styles/fonts/OpenSans_normal300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('/app/_XTier.Theme/styles/fonts/OpenSans_normal400.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('/app/_XTier.Theme/styles/fonts/OpenSans_normal600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('/app/_XTier.Theme/styles/fonts/OpenSans_normal700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('/app/_XTier.Theme/styles/fonts/OpenSans_normal800.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('/app/_XTier.Theme/styles/fonts/OpenSans_italic300.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('/app/_XTier.Theme/styles/fonts/OpenSans_italic400.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('/app/_XTier.Theme/styles/fonts/OpenSans_italic600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('/app/_XTier.Theme/styles/fonts/OpenSans_italic700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('/app/_XTier.Theme/styles/fonts/OpenSans_italic800.woff') format('woff');
+}
+.synermedTheme {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #222222;
+}
+.synermedTheme .whiteBoxContainer {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.synermedTheme .whiteBoxContainer.noPadding {
+  padding: 0;
+}
+.synermedTheme .whiteBoxContainer.noPadding .whiteBoxContainer-header {
+  position: relative;
+  padding: 20px;
+}
+.synermedTheme .whiteBoxContainer .whiteBoxContainer-header {
+  position: relative;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+.synermedTheme .whiteBoxContainer .whiteBoxContainer-header .whiteBoxContainer-header--label {
+  position: relative;
+  font-size: 18px;
+  color: #5fa634;
+  flex: 1;
+}
+.synermedTheme .whiteBoxContainer .whiteBoxContainer-header .whiteBoxContainer-header--extras {
+  position: relative;
+  font-size: 18px;
+  color: #5fa634;
+}
+.synermedTheme .labeledContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.synermedTheme .labeledContainer .labeledContainer-label {
+  color: #B1BCC2;
+  font-size: 12px;
+  padding-right: 7px;
+}
+.synermedTheme .labeledContainer .labeledContainer-result {
+  flex: 1;
+}
+.synermedTheme .labeledContainer.top {
+  flex-wrap: wrap;
+}
+.synermedTheme .labeledContainer.top .labeledContainer-label {
+  flex-basis: 100%;
+  padding-bottom: 3px;
+}
+.synermedTheme .labeledContainer.top .labeledContainer-result {
+  flex-basis: 100%;
+}
+.synermedTheme .labeledContainer.right .labeledContainer-label {
+  order: 2;
+  padding-left: 7px;
+  padding-right: 0;
+}
+.synermedTheme .labeledContainer.right .labeledContainer-result {
+  order: 1;
+}
+.synermedTheme .labeledContainer.center {
+  align-items: center;
+}
+.synermedTheme .synermedForm input[type=text] {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  margin: 0;
+  border: solid 1px #d6dfe8;
+  background-color: #fbfcfc;
+  line-height: 20px;
+  color: #222222;
+  font-style: italic;
+  font-size: 14px;
+}
+.synermedTheme .synermedForm input[type=text]:focus {
+  border-color: #008fdd;
+  outline-width: 0;
+}
+.synermedTheme .synermedForm textarea {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  border: solid 1px #d6dfe8;
+  background-color: #fbfcfc;
+  line-height: 20px;
+  color: #222222;
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.synermedTheme .synermedForm textarea:focus {
+  border-color: #008fdd;
+  outline-width: 0;
+}
+.synermedTheme .synermedForm input[type=submit],
+.synermedTheme .synermedForm input[type=button],
+.synermedTheme .synermedForm button {
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  height: 40px;
+  padding: 0 20px;
+  color: #008fdd;
+  background-color: #ffffff;
+  border: 1px solid #B4C3D3;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.synermedTheme .synermedForm input[type=submit]:hover,
+.synermedTheme .synermedForm input[type=button]:hover,
+.synermedTheme .synermedForm button:hover {
+  background-color: #008fdd;
+  color: #ffffff;
+  border-color: #008fdd;
+}
+.synermedTheme .synermedForm input[type=submit].stretch,
+.synermedTheme .synermedForm input[type=button].stretch,
+.synermedTheme .synermedForm button.stretch {
+  width: 100%;
+}
+.xThemeHorizontalKvps {
+  display: flex;
+}
+.xThemeHorizontalKvps .xThemeHorizontalKvps-kvp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.xThemeHorizontalKvps .xThemeHorizontalKvps-kvp .xThemeHorizontalKvps-kvp-key {
+  font-size: 12px;
+  color: #B1BCC2;
+  margin-bottom: 7.5px;
+}
+.xThemeHorizontalKvps .xThemeHorizontalKvps-kvp .xThemeHorizontalKvps-kvp-value {
+  color: #444;
+  font-size: 14px;
+}
+.xThemeHorizontalKvps .xThemeHorizontalKvps-kvp.xThemeHorizontalKvps-kvp--autoWidth {
+  flex: none;
+}
+.xThemeHorizontalKvps .xThemeHorizontalKvps-kvp:not(:first-of-type) {
+  margin-left: 15px;
+}

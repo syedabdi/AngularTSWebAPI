@@ -1,0 +1,17 @@
+﻿@import (reference) '../../variables.less';
+
+#WikiHeader {
+    .WikiHeader(@me) {
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 15px;
+
+        background-color: @blueAccent;
+
+        .@{me}-title {
+            color: #ffffff;
+            font-size: 16px;
+        }
+    }
+}

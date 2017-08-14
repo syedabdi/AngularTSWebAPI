@@ -1,0 +1,21 @@
+<package>
+    <metadata>
+        <id>SMC.XTier.VHR.BE</id>
+        <version>$buildNumber$</version>
+        <authors>Syed Abdi</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes></releaseNotes>
+        <copyright>Copyright 2017</copyright>
+        <tags>backend xtier VHR webapi</tags>
+        <dependencies>
+          <dependency id="TypeLite.Lib" version="[1.8.1,)" />
+          <dependency id="Unity" version="[3.4.1404.0,)" />
+          <dependency id="SMC.XTier.Security.BE" version="[1.1.17009.5,)" />
+        </dependencies>
+    </metadata>
+    <files>
+      <file src="bin\smc.xtier.VHR.*.dll" target="lib\" />
+      <file src="bin\smc.xtier.VHR.*.pdb" target="lib\" />
+      <file src="README.txt" target="" />
+    </files>
+</package>

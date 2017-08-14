@@ -1,0 +1,92 @@
+﻿@import (reference) '../../variables.less';
+@import (reference) 'wikiHeader.less';
+@import (reference) 'mainMenu.less';
+
+#wikiLayout {
+    .wikiLayout(@me) {
+        position: static;
+        width: 970px;
+        margin: 0 auto;
+        padding: 0;
+
+        background-color: #ffffff;
+        
+        font-family: @fontFamily;
+        font-size: @fontSize;
+        color: @fontColor;
+
+         .@{me}-wallpaper {
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           width: 970px;
+
+           background-color: #ffffff;
+           z-index: -1;
+        }
+
+        .@{me}-header {
+            #WikiHeader > .WikiHeader(@me);
+        }
+
+        .@{me}-body {
+            position: relative;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0; 
+
+            display: flex;
+            flex-direction:row;
+
+            .@{me}-menu {
+                #MainMenu > .MainMenu(@me);
+            }
+            .@{me}-content {
+                position: relative;
+                flex: 1;
+
+                margin: 0;
+                padding: 20px;
+            }
+        }
+
+        .@{me}-elementContainer {
+            position: relative;
+            margin: 10px 0;
+            padding: 20px;
+
+            background-color: @darkGreyAccentDark;
+        }
+
+        .@{me}-table {
+            position: relative;
+            display: table;
+            table-layout: auto;
+            width: 100%;
+            border-collapse: collapse;
+
+            th {
+                background-color: @greyAccentDark;
+                padding: 5px;
+                text-align: left;
+            }
+
+            td {
+                padding: 5px;
+                border-bottom: solid 1px @greyAccentBright;
+            }
+
+            tr {
+                &:last-child {
+                    td {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.themeWiki {
+    #wikiLayout > .wikiLayout(themeWiki);
+}

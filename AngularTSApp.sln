@@ -42,25 +42,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.synermedlabs.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = BE\\BE.csproj
-		SccProjectName1 = BE
-		SccLocalPath1 = BE
-		SccProjectUniqueName2 = DTO\\DTO.csproj
-		SccProjectName2 = DTO
-		SccLocalPath2 = DTO
-		SccProjectUniqueName3 = FE\\FE.csproj
-		SccProjectName3 = FE
-		SccLocalPath3 = FE
-		SccProjectUniqueName4 = Fns\\Fns.csproj
-		SccProjectName4 = Fns
-		SccLocalPath4 = Fns
-		SccProjectUniqueName5 = Services\\Services.csproj
-		SccProjectName5 = Services
-		SccLocalPath5 = Services
-	EndGlobalSection
 EndGlobal
